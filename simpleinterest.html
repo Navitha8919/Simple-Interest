@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 types of function preparation</title>
+</head>
+<body>
+    <script>
+        //2.find simple interest
+        //1.With  parameter and With return value
+         function simpleInterest1(p, r, t) {
+            var result
+            result=(p * r * t) / 100;
+            return result;
+        }
+        //2.without parameter & with return value
+        function simpleInterest2(){
+            var p=4000,r=5,t=2;
+            result=(p * r * t)/100;
+            return result;
+        }
+         // 3. With parameter & Without return value
+        function simpleInterest3(p, r, t) {
+            var result 
+            result = (p * r * t) / 100;
+            alert(result);
+        }
+        // 4. Without parameter & Without return value
+        function simpleInterest4() {
+            var p,t,r,result 
+            p = 5000, r = 4, t = 3;
+            result= (p * r * t) / 100;
+            alert(result);
+        }
+        var r1 = simpleInterest1(2000, 6, 1);
+        alert(r1)
+        var r2 = simpleInterest2()
+        alert(r2)
+        simpleInterest3(1500, 7, 2);
+        simpleInterest4(); 
+
+    </script>
+</body>
+</html>
